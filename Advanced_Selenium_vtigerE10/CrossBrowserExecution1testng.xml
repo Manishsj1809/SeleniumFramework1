@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="5" parallel="tests" name="TestRunner1">
+  <parameter name="BROWSER" value="chrome"></parameter>
+    <classes>
+      <class name="products.CreateProductsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  <test  name="TestRunner2">
+  <parameter name="BROWSER" value="edge"></parameter>
+    <classes>
+      <class name="campaigns.CreateCampaignsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test  name="TestRunner3">
+  <parameter name="BROWSER" value="edge"></parameter>
+    <classes>
+      <class name="organization.CreateOrganizationTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+</suite> <!-- Suite -->
+
